@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+
+<style>
+    html{
+        background-image: url(https://preview.redd.it/9e1bycr2tk321.png?width=640&crop=smart&auto=webp&s=f9c20a161f0a82c1c0eaccc0726b762b634be59e);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+    footer{
+        color: black;
+    }
+    .item{        
+        border-radius: 10%;
+        margin: 1% 1% 1% 1%;
+        padding: 1% 1% 1% 1%;
+        border: 1px solid #000000;
+        padding-left: 5%;
+        padding-right: 5%;
+        border-radius: 5%;
+    }
+    #Galería{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        justify-items: center
+    }
+    img{
+        width: 200px;
+    }
+    .move{
+        transition: ease-in 5s;
+    }
+    .move:hover{
+        width: 500px;
+        }
+    #WARNING{
+        color: red;
+    }
+    .moveS{
+        transition: ease-in 5s;
+        }
+        .moveS:hover{
+        width: 800px;
+        content: url(https://media1.tenor.com/m/U_PQrURSaaoAAAAd/jerma985-jerma.gif);
+        }
+</style>
+<head>
+</head>
+<header>
+    <h1>Mi Galería de Imágenes con Grid</h1>
+    <p>Esta es una galería sobre una de las maravillas de la tierra: Jeremy. Jeremy es un actor Mundialmente(solo en Boston Massachusetts) reconocido, además del director de Rat Movie: Mystery of the Mayan Treasure y Rat Movie 2: The Movie</p>
+    
+    
+</header>
+<main>
+    <div id="Galería">
+        <div class="item">
+            <p id="WARNING">NO SELECCIONAR ESTA IMAGEN</p>
+            <img class="moveS" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU8u8tpVE9yl1Jj0L81O7deRDfyW-yOXX-Kw&s" alt="s">
+        </div>
+        <div class="item">
+            <p>Jeremy sonriendo</p>
+                <img class="move" src="data:image/jpeg;base64,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" alt="jerma feliz">
+        </div>
+        <div class="item">
+            <p>jeremy cara seria</p>
+            <img class="move" src="https://i.redd.it/w36eb3zl6mgb1.png" alt="jerma ojo">
+        </div>
+        <div class="item">
+            <p>Jeremy sospechoso</p>
+            <img class="move" src="https://preview.redd.it/who-do-you-think-is-the-jerma985-of-the-project-moon-verse-v0-gnvxwetoznlb1.jpg?auto=webp&s=96edacd61257e30c9db5be4f08af679a33b3a540" alt="jerma.exe">
+        </div>
+        <div class="item">
+            <p>jeremy conduciendo su auto</p>
+            <img class="move" src="https://preview.redd.it/u5suq4poz8w71.jpg?width=640&crop=smart&auto=webp&s=87e6c7cda35783b5e8dd3f4b86118b64df6fa333" alt="Jerma en su auto">
+        </div>
+        <div class="item">
+            <p>Unica aparición de jeremy en la television publica</p>
+            <img class="move" src="https://static.wikia.nocookie.net/jerma-lore/images/2/2b/Jeremyjenkinstheninth.PNG/revision/latest/smart/width/386/height/259?cb=20171117033138" alt="jerma en show en vivo">
+        </div>
+    </div>
+    
+</main>
+
+<footer>Olivares Marcos 5°3 +54 9117841613</footer>
+<body>
+
+</body>
+
+<html> 
